@@ -1,0 +1,104 @@
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0turn);
+  }
+  33% {
+    transform: rotate(0.5turn);
+  }
+  66% {
+    transform: rotate(1turn);
+  }
+  100% {
+      animation-delay: ;
+  }
+}
+@keyframes heightChange {
+  0% {
+    animation-delay: 0.75s;
+  }
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+  100% {
+    animation-delay: 2s;
+  }
+}
+
+html {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #6cbcbe;
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#first {
+  background-color: #6cbcbe;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: rotateCircle 2.5s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.circle {
+  background-color: white;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+#second {
+  background-color: #6cbcbe;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 10px;
+}
+
+.square {
+  background-color: white;
+  width: 10px;
+  height: 40px;
+  animation: heightChange 1s ease-in-out infinite;
+}
+
+#second div:nth-child(1) {
+  animation-delay: 0.2s;
+}
+#second div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+#second div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+#second div:nth-child(4) {
+  animation-delay: 0.8s;
+}
+#second div:nth-child(5) {
+  animation-delay: 1s;
+}
