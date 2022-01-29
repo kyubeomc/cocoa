@@ -5,6 +5,8 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
+  /* border box는 css한태 박스의 크기를 바꾸지 말라고 하는거야  
+  디폴트는 내용안에 픽셀을 유지하는거임 */
   border-top: 1px solid rgba(121, 121, 121, 0.2);
 }
 .nav__list {
@@ -14,4 +16,8 @@
 
 .nav__list {
   color: #2e363e;
+}
+
+.nav__notification {
+  background-color: ;
 }
