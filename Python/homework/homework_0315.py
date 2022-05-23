@@ -6,10 +6,10 @@ Start by creating the functions
 """
 
 def is_on_list(list,element): 
-  element in list
+  return element in list
 
 def get_x(list,number) :
-  list[number]
+  return list[number]
 
 def add_x(list, element):
   list.append(element)

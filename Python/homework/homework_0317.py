@@ -1,6 +1,4 @@
-# 2020 03 18
-# checking url condition 
-# Kyubeom Choi
+
 
 import os
 import requests
